@@ -16,12 +16,12 @@ Use the profiles at your own responsibility.
 
 - for Cura:
 - download the newest version from the directory:
-- `git clone https://github.com/SimonHersche/3D-Printer-Slicer-Profiles/Cura_Profiles/`
+- `https://github.com/SimonHersche/3D-Printer-Slicer-Profiles/Cura_Profiles/`
 - import the .ini Profile in Cura by clicking on File/Open Profile... or press CRTL + C
 
 - for Simplify3D:
 - download the newest release candidate from the directory:
-- `git clone https://github.com/SimonHersche/3D-Printer-Slicer-Profiles/Simplify3D_Profiles/`
+- `https://github.com/SimonHersche/3D-Printer-Slicer-Profiles/Simplify3D_Profiles/`
 - import the .fff Profile in Simplify3D
 
 
