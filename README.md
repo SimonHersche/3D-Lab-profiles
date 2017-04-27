@@ -11,6 +11,11 @@ Use the profiles at your own responsibility.
   
 ## Usage
 
+- for Cura:
+- download the newest version from the directory:
+- `git clone https://github.com/SimonHersche/3D-Printer-Slicer-Profiles/Cura_Profiles/`
+- import the .ini Profile in Cura
+
 - for Simplify3D:
 - download the newest release candidate from the directory:
 - `git clone https://github.com/SimonHersche/3D-Printer-Slicer-Profiles/Simplify3D_Profiles/`
