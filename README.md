@@ -26,5 +26,5 @@ for Simplify3D:
 
 
 ## Profile Generator
-- To generate your own rofle with BCN3D's Generator go to this website:
+- To generate your own profile with BCN3D's Generator go to this website:
   http://progen.bcn3d.fr/
