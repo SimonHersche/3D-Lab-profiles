@@ -5,12 +5,15 @@ They aren't perfect but we try to improve them over time.
 Use the profiles at your own responsibility.
 
 ## Recent Changes
+
+- Update V1.1 28.04.2017
+  - Simplify3D V1.1 profiles added
+
 - Update V1.0 27.04.2017
   - Simplify3D V1.0 profiles added
   - Cura V1.0 profiles added
   
-- Update V1.1 28.04.2017
-  - Simplify3D V1.1 profiles added
+
   
 ## Usage
 
