@@ -19,12 +19,12 @@ Use the profiles at your own responsibility.
 
 for Cura:
 - download the newest version from the directory:
-- `https://github.com/masterprinter/3D-Printer-Slicer-Profiles/tree/master/Cura_Profiles`
+- `https://github.com/masterprinter/3D-Printer-Profiles/tree/master/Cura_Profiles`
 - import the .ini Profile in Cura by clicking on File/Open Profile... or press CRTL + C
 
 for Simplify3D:
 - download the newest version from the directory:
-- `https://github.com/masterprinter/3D-Printer-Slicer-Profiles/tree/master/Simplify3D_Profiles`
+- `https://github.com/masterprinter/3D-Printer-Profiles/tree/master/Simplify3D_Profiles`
 - import the .fff Profile in Simplify3D by clicking File/Import FFF Profile
 
 
