@@ -8,6 +8,7 @@ Use the profiles at your own responsibility.
 
 - Update V1.1 28.04.2017
   - Simplify3D V1.1 profiles added
+  - Cura V1.1 profiles added
 
 - Update V1.0 27.04.2017
   - Simplify3D V1.0 profiles added
