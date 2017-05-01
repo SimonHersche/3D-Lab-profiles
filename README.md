@@ -14,18 +14,17 @@ Use the profiles at your own responsibility.
   - Simplify3D V1.0 profiles added
   - Cura V1.0 profiles added
   
-
   
 ## Usage
 
+Click green button "clone or download" at the top of the page
+
 for Cura:
-- download the newest version from the directory:
-- `https://github.com/masterprinter/3D-Printer-Profiles/tree/master/Cura_Profiles`
+- open the folder Cura_Profiles and select the newest profile (pay attention to select the right nozzle diameter)
 - import the .ini Profile in Cura by clicking on File/Open Profile... or press CRTL + C
 
 for Simplify3D:
-- download the newest version from the directory:
-- `https://github.com/masterprinter/3D-Printer-Profiles/tree/master/Simplify3D_Profiles`
+- open the folder Simplify3D_Profiles and select the newest profile (pay attention to select the right nozzle diameter)
 - import the .fff Profile in Simplify3D by clicking File/Import FFF Profile
 
 
