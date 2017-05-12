@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="BCN3D Sigma V1.1 0.4" version="2017-05-02 18:56:45" app="S3D-Software 3.1.1">
+<profile name="BCN3D Sigma V1.1 0.4" version="2017-05-12 20:01:21" app="S3D-Software 3.1.1">
   <baseProfile>Leapfrog Creatr Dual (modified)</baseProfile>
   <printMaterial>PLA + PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -23,13 +23,13 @@
   <extruder name="Right Extruder">
     <toolheadNumber>1</toolheadNumber>
     <diameter>0.4</diameter>
-    <autoWidth>1</autoWidth>
-    <width>0.48</width>
+    <autoWidth>0</autoWidth>
+    <width>0.4</width>
     <extrusionMultiplier>1.05</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>6</retractionDistance>
+    <retractionDistance>5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0</retractionZLift>
+    <retractionZLift>0.05</retractionZLift>
     <retractionSpeed>3600</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.1</coastingDistance>
@@ -48,8 +48,8 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>130</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>160</firstLayerWidthPercentage>
+  <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.6</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
@@ -146,7 +146,7 @@
   <applyToolheadOffsets>0</applyToolheadOffsets>
   <gcodeXoffset>0</gcodeXoffset>
   <gcodeYoffset>0</gcodeYoffset>
-  <gcodeZoffset>0</gcodeZoffset>
+  <gcodeZoffset>-0.07</gcodeZoffset>
   <overrideMachineDefinition>1</overrideMachineDefinition>
   <machineTypeOverride>0</machineTypeOverride>
   <strokeXoverride>210</strokeXoverride>
@@ -279,13 +279,13 @@
     <extruder name="Right Extruder">
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
+      <autoWidth>0</autoWidth>
+      <width>0.4</width>
       <extrusionMultiplier>1.05</extrusionMultiplier>
       <useRetract>1</useRetract>
-      <retractionDistance>6</retractionDistance>
+      <retractionDistance>5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0</retractionZLift>
+      <retractionZLift>0.05</retractionZLift>
       <retractionSpeed>3600</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.1</coastingDistance>
