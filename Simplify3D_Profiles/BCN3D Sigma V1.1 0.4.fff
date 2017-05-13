@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<profile name="BCN3D Sigma V1.1 0.4" version="2017-05-12 20:01:21" app="S3D-Software 3.1.1">
+<profile name="BCN3D Sigma V1.1 0.4" version="2017-05-13 11:05:39" app="S3D-Software 3.1.1">
   <baseProfile>Leapfrog Creatr Dual (modified)</baseProfile>
   <printMaterial>PLA + PLA</printMaterial>
   <printQuality>Medium</printQuality>
-  <printExtruders>Both Extruders</printExtruders>
+  <printExtruders>Left Extruder Only</printExtruders>
   <extruder name="Left Extruder">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
-    <autoWidth>1</autoWidth>
-    <width>0.48</width>
+    <autoWidth>0</autoWidth>
+    <width>0.4</width>
     <extrusionMultiplier>1.05</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>6</retractionDistance>
+    <retractionDistance>5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0</retractionZLift>
+    <retractionZLift>0.05</retractionZLift>
     <retractionSpeed>3600</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.1</coastingDistance>
@@ -36,7 +36,7 @@
     <useWipe>0</useWipe>
     <wipeDistance>3</wipeDistance>
   </extruder>
-  <primaryExtruder>1</primaryExtruder>
+  <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.2</layerHeight>
   <topSolidLayers>3</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
@@ -49,7 +49,7 @@
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
+  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.6</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
@@ -59,7 +59,7 @@
   <raftInfill>85</raftInfill>
   <disableRaftBaseLayers>0</disableRaftBaseLayers>
   <useSkirt>1</useSkirt>
-  <skirtExtruder>999</skirtExtruder>
+  <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
   <skirtOutlines>1</skirtOutlines>
   <skirtOffset>4</skirtOffset>
@@ -75,18 +75,18 @@
   <oozeShieldSidewallShape>1</oozeShieldSidewallShape>
   <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
   <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
-  <infillExtruder>1</infillExtruder>
+  <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
   <infillPercentage>25</infillPercentage>
-  <outlineOverlapPercentage>20</outlineOverlapPercentage>
+  <outlineOverlapPercentage>15</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>150</infillExtrusionWidthPercentage>
   <minInfillLength>3</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <infillAngles>45,-45</infillAngles>
   <overlapInfillAngles>0</overlapInfillAngles>
   <generateSupport>1</generateSupport>
-  <supportExtruder>1</supportExtruder>
+  <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>33</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
   <denseSupportLayers>0</denseSupportLayers>
@@ -112,8 +112,8 @@
     <isHeatedBed>0</isHeatedBed>
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
-    <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="210"/>
+    <stabilizeAtStartup>0</stabilizeAtStartup>
+    <setpoint layer="1" temperature="0"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -146,7 +146,7 @@
   <applyToolheadOffsets>0</applyToolheadOffsets>
   <gcodeXoffset>0</gcodeXoffset>
   <gcodeYoffset>0</gcodeYoffset>
-  <gcodeZoffset>-0.07</gcodeZoffset>
+  <gcodeZoffset>-0.1</gcodeZoffset>
   <overrideMachineDefinition>1</overrideMachineDefinition>
   <machineTypeOverride>0</machineTypeOverride>
   <strokeXoverride>210</strokeXoverride>
@@ -168,7 +168,7 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>G28 F1200 ; home all axes,M140 S[bed0_temperature] ; set bed temperature &amp; do not wait,M104 S[extruder1_temperature] T1 ; set extruder right temperature &amp;  do not wait,M109 S[extruder0_temperature] T0 ; set extruder left temperature &amp; wait,M109 S[extruder1_temperature] T1 ; set extruder left temperature &amp; wait,M190  S[bed0_temperature] ; set bed temperature &amp; wait,,T1	;switch to the 2nd Extruder,G92 E0                  ;zero the extruded length,G1 F200 E20              ;extrude 20mm of feed stock,G92 E0                  ;zero the extruded length again,G4 P1000		;Delay 1000ms to stabilize Hotend's pressure,	,,T0	;switch to the 1st Extruder,G92 E0                  ;zero the extruded length,G1 F200 E20              ;extrude 20mm of feed stock,G92 E0                  ;zero the extruded length again,G4 P1000		;Delay 1000ms to stabilize Hotend's pressure,G1 F3000 E-5	     ;retract 5mm,,M117 ; Printing...,,</startingGcode>
+  <startingGcode>G28 F1200 ; home all axes,M140 S[bed0_temperature] ; set bed temperature &amp; do not wait,M104 S[extruder1_temperature] T1 ; set extruder right temperature &amp;  do not wait,M109 S[extruder0_temperature] T0 ; set extruder left temperature &amp; wait,M109 S[extruder1_temperature] T1 ; set extruder left temperature &amp; wait,M190  S[bed0_temperature] ; set bed temperature &amp; wait,,T0	;switch to the 1st Extruder,G92 E0                  ;zero the extruded length,G1 F200 E13              ;extrude 10mm of feed stock,G92 E0                  ;zero the extruded length again,G1 F2000 E-2	     ;retract 2mm,,M117 ; Printing...</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode>{IF NEWTOOL=0} T0			;Start tool switch 0,{IF NEWTOOL=1} T1			;Start tool switch 1,,G1 F2400 E0				;Filament to position 0,G1 F140 E3				;Default purge,G4 P1000				;Delay 1000ms to stabilize Hotend's pressure,G92 E0				;Zero extruder,G1 F3000 E-4				;Retract Filament,G1 F[travel_speed]			;End tool switch,G91				;Relative Position,G90				;Absolute Position</toolChangeGcode>
@@ -182,7 +182,7 @@
   <solidInfillUnderspeed>1</solidInfillUnderspeed>
   <supportUnderspeed>1</supportUnderspeed>
   <rapidXYspeed>12000</rapidXYspeed>
-  <rapidZspeed>1002</rapidZspeed>
+  <rapidZspeed>1200</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
   <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
@@ -295,13 +295,13 @@
     <extruder name="Left Extruder">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
+      <autoWidth>0</autoWidth>
+      <width>0.4</width>
       <extrusionMultiplier>1.05</extrusionMultiplier>
       <useRetract>1</useRetract>
-      <retractionDistance>6</retractionDistance>
+      <retractionDistance>5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
-      <retractionZLift>0</retractionZLift>
+      <retractionZLift>0.05</retractionZLift>
       <retractionSpeed>3600</retractionSpeed>
       <useCoasting>0</useCoasting>
       <coastingDistance>0.1</coastingDistance>
