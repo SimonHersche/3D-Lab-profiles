@@ -177,7 +177,7 @@
   <celebration>0</celebration>
   <celebrationSong>Looney Toons</celebrationSong>
   <postProcessing></postProcessing>
-  <defaultSpeed>3600</defaultSpeed>
+  <defaultSpeed>3000</defaultSpeed>
   <outlineUnderspeed>0.8</outlineUnderspeed>
   <solidInfillUnderspeed>1</solidInfillUnderspeed>
   <supportUnderspeed>1</supportUnderspeed>
